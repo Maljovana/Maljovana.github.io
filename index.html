@@ -44,6 +44,7 @@ ul li {
   height: 150px;
   margin:0 auto;
   background-color: #A9A9A9;
+  padding: 10px;
   }
   #cont {
   width: 100%; 
@@ -128,31 +129,34 @@ ul li {
   margin: 0 auto;
   margin-top: 50px;
    }
+   
  @media screen and (max-width: 960px) {
-    .wrapper, .welcome, #carouselExampleSlidesOnly, .flex-container2 {
+    .wrapper, .welcome, #carouselExampleSlidesOnly, .flex-container2, .flex-container1 {
         width: 100%;
         margin: 0 auto;
     }
 }
 @media screen and (max-width: 960px) {
-    .flex-container3, .flex-container4 {
+    .flex-container3, .flex-container4, ul {
         display: flex;
   		flex-direction: column;
   		align-items: flex-start;
     }
+    .flex-container1 {
+    	height: 250px;
+    }
 }
 @media screen and (max-width: 960px) {
-    .logo {
-       	width: 60px;
-    	height: 60px;
-    	margin: 0 auto;
-    	background-image: url("https://www.steelland.ru/pics/cat/logo-714.jpg");
+        .flex-container1 {
+    	padding-top: 10px;
     }
-    .flex-container1 {
-    	padding-top: 40px;
-    }
-   
-}
+   ul li {
+   	padding: 20px;
+   	}
+   	ul{
+   		margin-top: 20px;
+   	}
+   }
 </style>
 <body>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -163,7 +167,7 @@ ul li {
   <div class="logo"></div>
       <ul>
   <li><a href="#1"><button type="button" class="btn btn-danger">HOME</button></a></li>
-  <li><a href="#2"><button type="button" class="btn btn-danger">ABOUT</button></a></li>
+  <li><a href="#2"><button type="button" class="btn btn-danger">ABOUT US</button></a></li>
   <li><a href="#3"><button type="button" class="btn btn-danger">SERVICES</button></a></li>
   <li><a href="#4"><button type="button" class="btn btn-danger">GALLERY</button></a></li>
   <li><a href="#5"><button type="button" class="btn btn-danger">CONTACT US</button></a></li>
